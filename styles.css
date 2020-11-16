@@ -1,0 +1,105 @@
+html, body {
+  font-family: 'Lora', serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 200vh;
+}
+
+.main {
+  flex: 1;
+}
+
+.cards-container {
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 270px;
+  width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow .2s ease-out;
+  text-align: center;
+  padding: 10px;
+}
+.card:hover {
+  box-shadow: #ccc 0 0 20px 7px;
+}
+.card__picture {
+  flex: 1;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card:nth-child(1) .card__picture {
+  background-image: url("./assets/bag.jpg");
+}
+.card:nth-child(2) .card__picture {
+  background-image: url("./assets/neclace.jpg");
+}
+.card:nth-child(3) .card__picture {
+  background-image: url("./assets/purse.jpg");
+}
+.card:nth-child(4) .card__picture {
+  background-image: url("./assets/ring.png");
+}
+
+.main-landing {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+}
+
+.logo {
+  font-size: 80px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+.all-products-link {
+  align-self: center;
+  padding: 20px 70px;
+  border-radius: 20px;
+  background-image: linear-gradient(to left, blue, violet);
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  margin: 10px;
+  margin-bottom: 40px;
+  transition: box-shadow .2s ease-out;
+}
+.all-products-link:hover {
+  box-shadow: rgba(225, 91, 252, 0.301) 0 0 20px 7px;
+}
+
+footer {
+  background-color: lightslategray;
+  color: #fff;
+  padding: 10px;
+}
+
+.all-products {
+  padding: 10px 0;
+}
+
+.product {
+  display: block;
+  margin: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightslategray;
+}
+.product:first-child {
+  margin-top: 0px;
+}
